@@ -62,13 +62,13 @@ function noMilk (noMilk) {
 drinkButton.onclick = function() {
     if (inCup === morningCoffee.dl[3]) {
         morningCoffee.drinkCoffee();
-        changeHeight("180px");
+        changeHeight("50%");
     } else if (inCup === morningCoffee.dl[2]) {
         morningCoffee.drinkCoffee();
-        changeHeight("100px");
+        changeHeight("25%");
     } else if (inCup === morningCoffee.dl[1]) {
         morningCoffee.drinkCoffee();
-        changeHeight("0px");
+        changeHeight("0%");
     }
     inCup = morningCoffee.dl[currentCoffee];
     console.log(inCup);
@@ -77,7 +77,7 @@ drinkButton.onclick = function() {
 fillButton.onclick = function () {
     
     morningCoffee.fillCup();
-    changeHeight("270px");
+    changeHeight("75%");
     inCup = morningCoffee.dl[currentCoffee];
     console.log(inCup);
     noMilk("#824c25"); 
