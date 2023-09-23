@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+body {
+	width: 100%;
+	height: auto;
+	background-color: #824c25;
+}
+
+h1 {
+	font-size: 3rem;
+	font-weight: 700;
+}
+
+.content {
+	margin: 150px auto;
+	width: 60%;
+	height: auto;
+	background-color: beige;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 30px;
+	border-radius: 10px;
+	padding: 50px 0;
+}
+
+figure {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 350px;
+	height: 350px;
+}
+
+.coffee-cup {
+	width: 100%;
+	height: 100%;
+	margin-left: 70px;
+	position: relative;
+	z-index: 1;
+}
+
+
+
+.button {
+	width: 200px;
+	height: 50px;
+	border: 3px solid black;
+	border-radius: 10px;
+	background-color: #825331;
+	font-size: 22px;
+	font-weight: 600;
+	letter-spacing: 1px;
+	cursor: pointer;
+
+}
+
+.coffee {
+	background-color: #825331;
+	height: 0px;
+	width: 211px;
+	position: absolute;
+	display: block;
+	bottom: 40%;
+	z-index: 0;
+	border-radius: 0 0 50px 50px;
+
+} 
+
+.coffee-buttons {
+display: flex;
+gap: 10px;
+}
+
+
