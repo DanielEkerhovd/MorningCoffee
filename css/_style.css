@@ -33,10 +33,10 @@ figure {
 	background-color: #825331;
 	height: 0%;
 	width: 65%;
-	max-width: 220px;
+	max-width: 215px;
 	position: absolute;
 	bottom: 20%;
-	left: 15%;
+	left: 16%;
 	z-index: 0;
 	border-radius: 0 0 55px 55px;
 }
