@@ -32,11 +32,11 @@ figure {
 .coffee {
 	background-color: #825331;
 	height: 0%;
-	width: 65%;
-	max-width: 215px;
+	width: 56%;
+	max-width: 210px;
 	position: absolute;
-	bottom: 20%;
-	left: 16%;
+	bottom: 21%;
+	left: 19.5%;
 	z-index: 0;
 	border-radius: 0 0 55px 55px;
 }

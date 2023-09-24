@@ -4,8 +4,8 @@ const morningCoffee = {
     type: "beverage",
     color: "black",
     hot: true,
-    maxDl: 3,
-    dl: [0, 1, 2, 3],
+    maxDl: 5,
+    dl: [0, 1, 2, 3, 4, 5],
     milk: false,
     brand: [{
         name: "Friele",
@@ -60,12 +60,18 @@ function noMilk (noMilk) {
 }
 
 drinkButton.onclick = function() {
-    if (inCup === morningCoffee.dl[3]) {
+    if (inCup === morningCoffee.dl[5]) {
         morningCoffee.drinkCoffee();
-        changeHeight("50%");
+        changeHeight("60%");
+    } else if (inCup === morningCoffee.dl[4]) {
+        morningCoffee.drinkCoffee();
+        changeHeight("45%");
+    } else if (inCup === morningCoffee.dl[3]) {
+        morningCoffee.drinkCoffee();
+        changeHeight("30%");
     } else if (inCup === morningCoffee.dl[2]) {
         morningCoffee.drinkCoffee();
-        changeHeight("25%");
+        changeHeight("15%");
     } else if (inCup === morningCoffee.dl[1]) {
         morningCoffee.drinkCoffee();
         changeHeight("0%");
