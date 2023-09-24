@@ -81,19 +81,20 @@ drinkButton.onclick = function() {
 }
 
 fillButton.onclick = function () {
-    
+    if (morningCoffee.milk === true && inCup <= 2 ){
+        morningCoffee.milk = false;
+        noMilk("#824c25"); 
+    };
     morningCoffee.fillCup();
     changeHeight("75%");
     inCup = morningCoffee.dl[currentCoffee];
     console.log(inCup);
-    noMilk("#824c25"); 
-    morningCoffee.milk = false;
 };
 
 addLactose.onclick = function() {
     addMilk("#9d6b47");
     morningCoffee.milk = true;
-
+    console.log(morningCoffee.milk);
 }
 
 
