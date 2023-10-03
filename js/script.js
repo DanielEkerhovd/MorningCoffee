@@ -40,7 +40,7 @@ const morningCoffee = {
 }
 
 
-
+var inCup = 0;
 var currentCoffee = morningCoffee.maxDl;
 var drinkButton = document.querySelector(".drink-button");
 var fillButton = document.querySelector(".fill-button");
@@ -92,6 +92,7 @@ fillButton.onclick = function () {
 };
 
 addLactose.onclick = function() {
+    if (inCup > 0)
     addMilk("#9d6b47");
     morningCoffee.milk = true;
     console.log(morningCoffee.milk);
